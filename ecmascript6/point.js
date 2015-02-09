@@ -8,6 +8,8 @@
 *    $ traceur point.js
 */
 
+// Importanct to use strict mode
+
 "use strict";
 
 class Point {
@@ -28,7 +30,8 @@ class ColorPoint extends Point {
   }
 
   toString() {
-    return super() + ' ' + this.color;
+    return super.toString() + ' ' + this.color;
+    // or: return super() + ' ' + this.color;
   }
 }
 
